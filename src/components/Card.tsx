@@ -33,7 +33,6 @@ const Card = () => {
                         marginBottom: 15,
                         justifyContent: 'center',
                         alignItems: 'center',
-                        padding: 10,
                     }}
                 >
 

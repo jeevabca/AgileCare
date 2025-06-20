@@ -18,7 +18,7 @@ const HomeCard = () => {
             />
             <View style={{ margin: 20, flex: 1 }}>
                 <Text style={{ fontFamily: 'Boldonse-Regular', color: COLOR.BLACK, }}>Health Calculator</Text>
-                <Text style={{ flexWrap: 'wrap', }}>Stay Fit & Calculate With Your Favorite Health
+                <Text style={{ flexWrap: 'wrap', color: 'grey' }}>Stay Fit & Calculate With Your Favorite Health
                     Tool Accurately & Easily</Text>
             </View>
         </View>

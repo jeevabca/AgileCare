@@ -1,4 +1,4 @@
-import { Image, StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StatusBar, Text, TouchableOpacity, View, Platform } from 'react-native';
 import React from 'react';
 import { COLOR } from '../utils/constant';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -12,9 +12,10 @@ const Header = ({ title }: HeaderProps) => {
     return (
         <View
             style={{
-                alignItems: 'center',
                 backgroundColor: COLOR.HEADER,
-                paddingVertical: 15,
+                paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 50,
+                paddingBottom: 15,
+                paddingHorizontal: 15,
                 borderBottomEndRadius: 30,
                 borderBottomStartRadius: 30,
                 elevation: 10,
@@ -27,7 +28,7 @@ const Header = ({ title }: HeaderProps) => {
                     alignItems: 'center',
                 }}
             >
-                <TouchableOpacity style={{ right: 50 }} onPress={() => navigation.goBack()}>
+                <TouchableOpacity style={{ paddingRight: 30 }} onPress={() => navigation.goBack()}>
                     <MaterialIcons name='arrow-back-ios-new' size={24} color={'black'} />
                 </TouchableOpacity>
                 <Image
