@@ -5,14 +5,16 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation } from '@react-navigation/native';
 type HeaderProps = {
     title: string;
+    color: string;
 };
 
-const Header = ({ title }: HeaderProps) => {
+const Header = ({ title, color }: HeaderProps) => {
+
     const navigation = useNavigation();
     return (
         <View
             style={{
-                backgroundColor: COLOR.HEADER,
+                backgroundColor: color,
                 paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 50,
                 paddingBottom: 15,
                 paddingHorizontal: 15,
@@ -21,7 +23,7 @@ const Header = ({ title }: HeaderProps) => {
                 elevation: 10,
             }}
         >
-            <StatusBar backgroundColor={COLOR.HEADER} barStyle="dark-content" />
+            <StatusBar backgroundColor={color} barStyle="dark-content" />
             <View
                 style={{
                     flexDirection: 'row',

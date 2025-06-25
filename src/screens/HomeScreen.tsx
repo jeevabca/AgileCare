@@ -7,7 +7,6 @@ import {
     TouchableOpacity,
     View,
     StyleSheet,
-    Platform
 } from 'react-native';
 import Homeheader from '../components/Homeheader';
 import HomeCard from '../components/HomeCard';

@@ -1,28 +1,25 @@
-
-
 export interface DiabieticData {
-  pregnancies: string ;
+  pregnancies: string;
   Glucose: string;
   BloodPressure: string;
-  SkinThickness:  string;
-  Insulin:  string;
-  BMI:  string;
+  SkinThickness: string;
+  Insulin: string;
+  BMI: string;
   DiabetesPedigreeFunction: string;
   Age: string;
 }
 
 export type RootStackParamList = {
   DiabietsScreen: undefined;
-  BMIScreen:undefined;
-  BodyWeightScreen:undefined;
-  BasalScreen:undefined;
-  WaterIntakeScreen:undefined;
-  CaloriesBurnedScreen:undefined;
-  LeanBodyMassScreen:undefined;
-  BodyFrameScreen:undefined;
-  CalorieIntakeScreen:undefined;
-  ChestToHipScreen:undefined;
-  WaistToHeightScreen:undefined;
-  WaistToHipScreen:undefined;
-
+  BmiScreen: undefined;
+  BodyWeightScreen: undefined;
+  BasalScreen: undefined;
+  WaterIntakeScreen: undefined;
+  CaloriesBurnedScreen: undefined;
+  LeanBodyMassScreen: undefined;
+  BodyFrameScreen: undefined;
+  CalorieIntakeScreen: undefined;
+  ChestToHipScreen: undefined;
+  WaistToHeightScreen: undefined;
+  WaistToHipScreen: undefined;
 };

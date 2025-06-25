@@ -1,7 +1,7 @@
 import { SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View, ActivityIndicator } from 'react-native';
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import { COLOR } from '../utils/constant';
+import { CARDCOLOR, COLOR } from '../utils/constant';
 import { diabieticAPICALL } from '../services/httpservices';
 import { DiabieticData } from '../types/DiabieticTypes';
 import FastImage from 'react-native-fast-image';
@@ -77,7 +77,7 @@ const DiabietsScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
-            <Header title={'Diabetes prediction'} />
+            <Header title={'Diabetes prediction'} color={CARDCOLOR.FIRST.color} />
             <ScrollView contentContainerStyle={{ padding: 20, alignItems: 'center' }} showsVerticalScrollIndicator={false}>
                 <View style={{ width: '100%', alignItems: 'flex-start' }}>
                     {[
@@ -149,7 +149,7 @@ const DiabietsScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
                     style={{
                         backgroundColor: loading ? '#ccc' : COLOR.HEADER,
                         width: '100%',
-                        padding: 15,
+                        padding: 20,
                         alignItems: 'center',
                         borderRadius: 15
                     }}
